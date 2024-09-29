@@ -62,5 +62,5 @@ class Book_Post_Type {
     }
 }
 
-
+// Initialize the plugin
 new Book_Post_Type();
