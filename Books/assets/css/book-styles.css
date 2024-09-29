@@ -1,0 +1,82 @@
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.genre-filter{
+    margin-bottom: 25px;
+}
+.genre-filter select{
+    width: auto;
+    cursor: pointer;
+    padding: 10px 32px 10px 12px;
+    color: #3C4257;
+    font-size: 14px;
+    line-height: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 1px #E0E0E0, 0px 2px 4px rgb(208 208 208 / 3%), 0px 1px 1.5px rgb(227 227 227 / 2%);
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.books-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.books-grid article{
+    width: calc(33% - 13px);
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 0px 1px #e0e0e038, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgb(255 255 255 / 5%);
+    padding: 15px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.books-grid article:nth-child(3n - 2){
+    margin-left: 0px;
+}
+.books-grid article .thumbnail a{
+    display: block;
+}
+.books-grid article .thumbnail a img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.books-grid article h2{
+    margin: 25px 0px 10px 0px;
+    line-height: 26px;
+    text-align: center;
+}
+.books-grid article h2 a{
+    color: #3C4257;
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.books-grid article p{
+    color: #3C4257;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0px;
+}
+
+@media (max-width: 1200px) {
+    .books-grid article{
+        width: calc(50% - 13px);
+    }
+    .books-grid article:nth-child(2n - 1){
+        margin-left: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .books-grid article{
+        width: 100%
+    }
+    .books-grid article{
+        margin-left: 0px;
+    }
+}
